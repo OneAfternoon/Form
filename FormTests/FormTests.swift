@@ -11,7 +11,7 @@ import XCTest
 
 class FormTests: XCTestCase {
     
-    public func testNothing() {g
+    public func testNothing() {
         typealias SampleState = (string: String, integer: Int)
         
         let myForm = Form<SampleState>(
@@ -26,7 +26,7 @@ class FormTests: XCTestCase {
             ],
             completion: { model in
                 print(model)
-        }
+            }
         )
     }
 }
