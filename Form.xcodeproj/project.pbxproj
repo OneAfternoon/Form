@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		A01CCA89212D2FCD0022ADD3 /* Form.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A01CCA7F212D2FCD0022ADD3 /* Form.framework */; };
 		A01CCA8E212D2FCD0022ADD3 /* FormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01CCA8D212D2FCD0022ADD3 /* FormTests.swift */; };
-		A01CCA90212D2FCD0022ADD3 /* Form.h in Headers */ = {isa = PBXBuildFile; fileRef = A01CCA82212D2FCD0022ADD3 /* Form.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A01CCA9A212D2FDA0022ADD3 /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01CCA99212D2FDA0022ADD3 /* Form.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,11 +24,11 @@
 
 /* Begin PBXFileReference section */
 		A01CCA7F212D2FCD0022ADD3 /* Form.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Form.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A01CCA82212D2FCD0022ADD3 /* Form.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Form.h; sourceTree = "<group>"; };
 		A01CCA83212D2FCD0022ADD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A01CCA88212D2FCD0022ADD3 /* FormTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FormTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A01CCA8D212D2FCD0022ADD3 /* FormTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTests.swift; sourceTree = "<group>"; };
 		A01CCA8F212D2FCD0022ADD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A01CCA99212D2FDA0022ADD3 /* Form.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Form.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +71,8 @@
 		A01CCA81212D2FCD0022ADD3 /* Form */ = {
 			isa = PBXGroup;
 			children = (
-				A01CCA82212D2FCD0022ADD3 /* Form.h */,
 				A01CCA83212D2FCD0022ADD3 /* Info.plist */,
+				A01CCA99212D2FDA0022ADD3 /* Form.swift */,
 			);
 			path = Form;
 			sourceTree = "<group>";
@@ -93,7 +93,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A01CCA90212D2FCD0022ADD3 /* Form.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +147,7 @@
 				TargetAttributes = {
 					A01CCA7E212D2FCD0022ADD3 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					A01CCA87212D2FCD0022ADD3 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -194,6 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A01CCA9A212D2FDA0022ADD3 /* Form.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +340,7 @@
 		A01CCA94212D2FCD0022ADD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -356,6 +358,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.OneAfternoon.Form;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +367,7 @@
 		A01CCA95212D2FCD0022ADD3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -389,6 +393,7 @@
 		A01CCA97212D2FCD0022ADD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 39TR9YNAJ4;
 				INFOPLIST_FILE = FormTests/Info.plist;
@@ -407,6 +412,7 @@
 		A01CCA98212D2FCD0022ADD3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 39TR9YNAJ4;
 				INFOPLIST_FILE = FormTests/Info.plist;
